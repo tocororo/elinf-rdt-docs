@@ -8,35 +8,35 @@ Este es un repositorio del equipo [Researh Development Team del proyecto ELINF](
 
 ## Febrero:
 
-- [x] Documentación de los artefactos del ecosistema (Omar, Ireimis, Rafael)
+- [ ] Documentación de los artefactos del ecosistema (Omar, Ireimis, Rafael)
 
-    - Desarrollar el diagrama de despliegue de los elementos del ecosistema (Rafael, Ireimis)
+    - [ ] Desarrollar el diagrama de despliegue de los elementos del ecosistema (Rafael, Ireimis)
 
-    - Comienzo del proceso de migración a la última versión de Dspace
+    - [ ] Comienzo del proceso de migración a la última versión de Dspace
 
-    - Crear una maquina virtual o contenedor con Dspace7 y ponerlo en una nube accesible a todos con documentacion para instalar en cada universidad (Reinier)
+    - [ ] Crear una maquina virtual o contenedor con Dspace7 y ponerlo en una nube accesible a todos con documentacion para instalar en cada universidad (Reinier)
 
-    - Instalar y comenzar la migración a la ultima version de Dspace (Eirielys, Leudis, Ruben)
+    - [ ] Instalar y comenzar la migración a la ultima version de Dspace (Eirielys, Leudis, Ruben)
 
 - [ ] Intership in Belgium (Amed ):
 
-    - Culminación del proceso de adaptación del modelo de VIVO a las características cubanas 
+    - [ ] Culminación del proceso de adaptación del modelo de VIVO a las características cubanas 
 
-    - Definir el modelo de la entrada de la semilla que debe proveer el SPI
+    - [ ] Definir el modelo de la entrada de la semilla que debe proveer el SPI
 
-    - Vivo access to Moodle
+    - [ ] Vivo access to Moodle
 
-    - Especialistas a contactar: Manuel Hidalgo (IICA) y John Ferreira (Cornell)
+    - [ ] Especialistas a contactar: Manuel Hidalgo (IICA) y John Ferreira (Cornell)
 
 - [ ] Despliegue de VIVO en cada universidad
 
-    - Crear maquina virtual o contenerdor con VIVO y ponerlo en una nube accesible a todos con la documentacion para instalar en cada universidad (Rafael)
+    - [ ] Crear maquina virtual o contenerdor con VIVO y ponerlo en una nube accesible a todos con la documentacion para instalar en cada universidad (Rafael)
 
-    - instalar en cada universidad la ultima version de VIVO (Enrique, Leonardo, Luyser)
+    - [ ] instalar en cada universidad la ultima version de VIVO (Enrique, Leonardo, Luyser)
 
 - [ ] Videoconferencia Camaguey-UPR para articular desarrollos relacionados con la conexión con el sistema de recursos humanos y SPI.
 
-    - Establecer el mecanismo para obtener la estructura de la universidad.
+    - [ ] Establecer el mecanismo para obtener la estructura de la universidad.
 
 - [ ] Ingeniería de Software de SPI (Alejandro, Ireimis)
 
