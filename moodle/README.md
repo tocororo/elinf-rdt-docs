@@ -1,0 +1,1 @@
+Para la documentación del proceso de interacción de Moodle con el resto de los componentes del sistema
