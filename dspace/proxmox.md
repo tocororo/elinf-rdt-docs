@@ -6,11 +6,11 @@ Guia para la instalación de Dspace a partir de un backup de Proxmox Maquina Vir
 
 ***Requisito: Acceso de administración de Proxmox.***
 
-1. Descargar el backup desde https://crai.upr.edu.cu/shares/ubuntu-jammy-lxd-ansible-dspace-vm.vma.zst
+1. Descargar el backup desde https://crai.upr.edu.cu/shares/vzdump-qemu-ubuntu-jammy-lxd-ansible-dspace-vm.vma.zst
 
 *Importar a proxmox puede ser de diferentes maneras, Eg:*
 ```
-qmrestore ubuntu-jammy-lxd-ansible-dspace-vm.vma.zst 100
+qmrestore vzdump-qemu-ubuntu-jammy-lxd-ansible-dspace-vm.vma.zst 100
 ```
 
 2. Cambiar la Dirección MAC e IP de la VM 
