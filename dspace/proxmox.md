@@ -95,7 +95,61 @@ pwd:1qazxsw2
 Cambiar las credenciales según necesidad. 
 
 
-## 3- : Importar los datos para migrar de la instalación anterior.
+
+## 3- :  Aumentar el tamaño del disco de la VM
+
+- Mediante la interfaz web de proxmox, aumentar el dispositivo disco duro a la cantidad deseada. 
+- Dentro de la maquina virtual ejecutar los siguientes comandos:
+```
+dspace@dspace:~$ sudo parted /dev/sda
+
+(parted) print                                                            
+Model: QEMU QEMU HARDDISK (scsi)
+Disk /dev/sda: 50.5GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name  Flags
+ 1      1049kB  2097kB  1049kB                     bios_grub
+ 2      2097kB  2150MB  2147MB  ext4
+ 3      2150MB  34.4GB  32.2GB
+
+(parted) resizepart 3 100%                                                
+(parted) print
+Model: QEMU QEMU HARDDISK (scsi)
+Disk /dev/sda: 50.5GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name  Flags
+ 1      1049kB  2097kB  1049kB                     bios_grub
+ 2      2097kB  2150MB  2147MB  ext4
+ 3      2150MB  50.5GB  48.3GB
+
+
+root@dspace:/home/dspace# lvresize --extents +100%FREE --resizefs /dev/ubuntu-vg/ubuntu-lv
+  Size of logical volume ubuntu-vg/ubuntu-lv changed from <30.00 GiB (7679 extents) to <45.00 GiB (11519 extents).
+  Logical volume ubuntu-vg/ubuntu-lv successfully resized.
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/mapper/ubuntu--vg-ubuntu--lv is mounted on /; on-line resizing required
+old_desc_blocks = 4, new_desc_blocks = 6
+The filesystem on /dev/mapper/ubuntu--vg-ubuntu--lv is now 11795456 (4k) blocks long.
+
+root@dspace:/home/dspace# df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              393M 1008K  392M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   45G   29G   15G  67% /
+tmpfs                              2.0G     0  2.0G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          2.0G  253M  1.6G  14% /boot
+tmpfs                              393M  4.0K  393M   1% /run/user/1000
+
+```
+
+
+## 4- : Importar los datos para migrar de la instalación anterior.
 
 TODO:
 
