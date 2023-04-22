@@ -82,10 +82,22 @@ Cambiar las siguientes variables.
 $ lxc start dspace-75-backend dspace-75-frontend
 $ cd /home/dspace/ansible
 $ ansible-playbook dspace-lxd.yml
-$ sudo su
-$ ansible-playbook dspace-vm.yml
-
 ```
+Si no quiere o no se puede generar un certificado de LetsEncrypt, editar el fichero /home/dspace/ansible/dspace-vm.yml y cambiar la línea 
+```
+manage_letsencrypt: True
+```
+a 
+```
+manage_letsencrypt: False
+```
+Luego ejecutar:
+```
+$ sudo su
+$ cd /home/dspace/ansible
+$ ansible-playbook dspace-vm.yml
+```
+
 
 4- Entrar al sistema
 Credenciales: 
