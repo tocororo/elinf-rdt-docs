@@ -82,6 +82,7 @@ Cambiar las siguientes variables.
 $ lxc start dspace-75-backend dspace-75-frontend
 $ cd /home/dspace/ansible
 $ ansible-playbook dspace-lxd.yml
+$ sudo su
 $ ansible-playbook dspace-vm.yml
 
 ```
