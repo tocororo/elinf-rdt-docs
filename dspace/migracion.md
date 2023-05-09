@@ -1,6 +1,9 @@
 # migracion para las VM
+Aqui se debe producir un procedmiento que esta basado en los siguientes dos recursos:
 
-sigue los pasos generales de la guia https://wiki.lyrasis.org/display/DSDOC7x/Migrating+DSpace+to+a+new+server
+ https://wiki.lyrasis.org/display/DSDOC7x/Migrating+DSpace+to+a+new+server
+ https://wiki.lyrasis.org/display/DSDOC7x/Upgrading+DSpace
+ 
 
 TODO: 
 Porner los pasos que ha hecho reinier... 
